@@ -1,0 +1,25 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{title}}!
+  </h1>
+</div>
+
+<form>
+  <label>Toggle Direction</label>
+  <input type="radio" name="direction" [(ngModel)]="direction" value="up"> Up
+  <input type="radio" name="direction" [(ngModel)]="direction" value="down"> Down
+  <input type="radio" name="direction" [(ngModel)]="direction" value="left"> Left
+  <input type="radio" name="direction" [(ngModel)]="direction" value="right"> Right
+</form> 
+
+
+
+<fab-speed-dial [direction]="direction">
+  <button type="button" fab-toggle>&#10010;</button>
+  <button type="button" fab-button>b1</button>
+  <button type="button" fab-button>b2</button>
+  <button type="button" fab-button>b3</button>
+</fab-speed-dial>
+
+
